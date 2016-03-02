@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -f $1/package.json ]; then
-  grep '"build"' $1/package.json >/dev/null && echo "npm buildstep buildpack" && exit 0 || exit 1
+  grep '"build"' $1/package.json >/dev/null && echo "npm build step" && exit 0 || exit 1
 else
   exit 1
 fi
