@@ -10,7 +10,7 @@ This will run `npm run build` at when heroku builds.
 1. Add the buildpack to heroku using
 
    ```bash
-   $ heroku buildpacks:add https://github.com/romeovs/heroku-buildpack-npm-build
+   $ heroku buildpacks:add https://github.com/romeovs/heroku-buildpack-npm-build.git
    ```
 2. push your code.
 
