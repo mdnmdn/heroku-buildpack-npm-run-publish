@@ -10,5 +10,7 @@ source $bp_dir/lib/common.sh
 export_env_dir $env_dir
 cd $build_dir
 
-head "Running 'npm run build'"
-npm run build
+custom_command=${NPM_CUSTOM_RUN_COMMAND:-publish}
+
+head "Running 'npm run $custom_command'"
+npm run $custom_command
